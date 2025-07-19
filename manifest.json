@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "TabSync",
+  "version": "1.0",
+  "description": "Sync your open tabs to Google Calendar.",
+  "permissions": [
+    "tabs",
+    "identity"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "oauth2": {
+    "client_id": "114719397711-93p9klv2r1dff6g1j2e9bp1c0k00ln3o.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar",
+      "https://www.googleapis.com/auth/calendar.events",
+      "https://www.googleapis.com/auth/spreadsheets"
+    ]
+  }
+}
